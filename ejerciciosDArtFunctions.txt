@@ -215,6 +215,16 @@ void watchVahiculo(){
   print(nuevo) ;
 }
 
+void functionList(){
+  var list=['apples','oranges','pineapple'];
+  for(int i=0; i<list.length; i ++){
+    print('la fruta desde el for es $(list[i]));
+  }
+  list.forEach((String i){
+    print('La fruta desde un each es$[i]');
+  })
+} 
+
 void main() {
  
   print( compareToDateNowasString('2020-11-20') );
@@ -248,4 +258,6 @@ void main() {
   testDynamic();
  
   watchVahiculo();
+
+  functionList();
 }
